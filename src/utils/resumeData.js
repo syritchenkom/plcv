@@ -3,9 +3,14 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { WebOutlined, AssignmentOutlined } from '@material-ui/icons';
+import {
+	WebOutlined,
+	AssignmentOutlined,
+	YouTube,
+	Language
+} from '@material-ui/icons';
 
-export default {
+const resumeData = {
 	name: 'Mykhailo Syritchenko',
 	title: 'Junior frontend developer',
 
@@ -123,5 +128,61 @@ export default {
 			title: 'SOURCE CONTROL',
 			description: ['Git', 'GitHub', 'SCRUM/Agile']
 		}
+	],
+
+	projects: [
+		{
+			tag: 'React',
+			images:
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+			title: 'React Project 1',
+			caption: 'A short description',
+			description: 'This is my project description. Please fill it in.',
+			links: [
+				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
+				{ link: 'https://www.google.com/', icon: <Language /> }
+			]
+		},
+		{
+			tag: 'React',
+			images:
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+			title: 'React Project 2',
+			caption: 'A short description',
+			description: 'This is my project description. Please fill it in.',
+			links: [
+				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
+				{ link: 'https://www.google.com/', icon: <Language /> }
+			]
+		},
+		{
+			tag: 'Python',
+			images:
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+			title: 'Python Project 1',
+			caption: 'A short description',
+			description: 'This is my project description. Please fill it in.',
+			links: [
+				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
+				{ link: 'https://www.google.com/', icon: <Language /> }
+			]
+		},
+		{
+			tag: 'Java',
+			images:
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+			title: 'Java Project 1',
+			caption: 'A short description',
+			description: 'This is my project description. Please fill it in.',
+			links: [
+				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
+				{ link: 'https://www.google.com/', icon: <Language /> }
+			]
+		}
 	]
 };
+export default resumeData;

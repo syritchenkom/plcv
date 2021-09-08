@@ -17,7 +17,10 @@ export const Footer = () => {
 					</a>
 					<br />
 					Clone idea from{' '}
-					<a href="https://themeforest.net/user/tavonline" target="_blank">
+					<a
+						href="https://themeforest.net/user/tavonline"
+						target="_blank"
+						rel="noreferrer">
 						Tavonline
 					</a>
 					.

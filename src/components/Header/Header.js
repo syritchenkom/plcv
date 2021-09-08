@@ -1,25 +1,8 @@
 import React from 'react';
-import {
-	Button,
-	Form,
-	FormControl,
-	Container,
-	Nav,
-	Navbar,
-	NavDropdown
-} from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-	HomeRounded,
-	SchoolRoundedIcon,
-	WorkRoundedIcon,
-	Facebook,
-	Twitter,
-	LinkedIn,
-	GitHub,
-	Telegram
-} from '@material-ui/icons';
-import { Link, NavLink, withRouter } from 'react-router-dom';
+import { HomeRounded, Telegram } from '@material-ui/icons';
+import { NavLink, withRouter } from 'react-router-dom';
 import resumeData from '../../utils/resumeData';
 import CustomButton from '../Button/Button';
 import './Header.css';
@@ -60,7 +43,10 @@ const Header = (props) => {
 
 				<div className="header_right">
 					{Object.keys(resumeData.socials).map((key) => (
-						<a href={resumeData.socials[key].link} target="_blank">
+						<a
+							href={resumeData.socials[key].link}
+							target="_blank"
+							rel="noreferrer">
 							{resumeData.socials[key].icon}
 						</a>
 					))}

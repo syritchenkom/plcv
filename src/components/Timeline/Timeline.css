@@ -33,13 +33,24 @@
 	padding: 2px !important;
 }
 
+/* &:nth-last-child(1)': {
+   borderBottom: 'none'
+} */
+.timeline .timeline_line:nth-last-child(1) {
+	display: none !important;
+}
+
 .timeline .MuiTimelineConnector-root {
 	background-color: #eee !important;
 }
+/* .timeline .MuiTimelineConnector-root :last-of-type {
+	display: none;
+} */
 
 .timeline .timeline_dot_header > .MuiSvgIcon-root {
 	font-size: 20px;
-	color: darkslategray;
+	color: black;
+	/* color: darkslategray; */
 }
 
 .timeline .separator_padding {

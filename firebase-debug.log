@@ -1,0 +1,39 @@
+[debug] [2021-09-08T15:01:15.490Z] ----------------------------------------------------------------------
+[debug] [2021-09-08T15:01:15.495Z] Command:       /usr/local/bin/firebase /home/michael/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2021-09-08T15:01:15.495Z] CLI Version:   9.17.0
+[debug] [2021-09-08T15:01:15.495Z] Platform:      linux
+[debug] [2021-09-08T15:01:15.495Z] Node Version:  v12.18.1
+[debug] [2021-09-08T15:01:15.496Z] Time:          Wed Sep 08 2021 17:01:15 GMT+0200 (Central European Summer Time)
+[debug] [2021-09-08T15:01:15.496Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-08T15:01:15.579Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-08T15:01:15.580Z] > authorizing via signed-in user (syritchenko@gmail.com)
+[debug] [2021-09-08T15:01:15.580Z] [iam] checking project net-project-hosting for permissions ["firebase.projects.get"]
+[debug] [2021-09-08T15:01:15.583Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-08T15:01:15.583Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-08T15:01:15.859Z] <<< HTTP RESPONSE 200 {"date":"Wed, 08 Sep 2021 15:01:15 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-08T15:01:15.871Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/net-project-hosting:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-09-08T15:01:16.781Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 08 Sep 2021 15:01:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=680","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-08T15:01:16.785Z] > refreshing access token with scopes: []
+[debug] [2021-09-08T15:01:16.786Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-08T15:01:17.058Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 08 Sep 2021 15:01:17 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-08T15:01:17.074Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/net-project-hosting [none]
+[debug] [2021-09-08T15:01:17.458Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/net-project-hosting 200
+[debug] [2021-09-08T15:01:17.458Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/net-project-hosting {"projectId":"net-project-hosting","projectNumber":"806595196507","displayName":"Net Project Hosting","name":"projects/net-project-hosting","resources":{"hostingSite":"net-project-hosting"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/media/michael/b721edb2-2ef1-4ba9-ab63-243bef7eb1ab/michael/Internet/ReactJS/project/project1'...
+[info] 
+[debug] [2021-09-08T15:01:17.462Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/net-project-hosting/sites 
+[debug] [2021-09-08T15:01:18.404Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/net-project-hosting/sites 200
+[debug] [2021-09-08T15:01:18.404Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/net-project-hosting/sites {}
+[debug] [2021-09-08T15:01:18.405Z] Failed to list hosting sites
+[debug] 
+[debug] [2021-09-08T15:01:18.406Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/net-project-hosting/webApps/-/config [none]
+[debug] [2021-09-08T15:01:19.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/net-project-hosting/webApps/-/config 200
+[debug] [2021-09-08T15:01:19.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/net-project-hosting/webApps/-/config {"projectId":"net-project-hosting","storageBucket":"net-project-hosting.appspot.com","apiKey":"AIzaSyC0HGy7U2cqk3-P8dAynmt0Ncl4aB8eB1s","authDomain":"net-project-hosting.firebaseapp.com","messagingSenderId":"806595196507"}
+[info] i  hosting: Serving hosting files from: n {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mn\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [08/Sep/2021:15:01:28 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Sep/2021:15:01:28 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
