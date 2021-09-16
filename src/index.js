@@ -1,39 +1,13 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import firebase from 'firebase';
-import 'firebase/firestore';
-import 'firebase/auth';
-import { ContextProvider } from 'react-is';
-
-// Initialize Firebase
-const app = initializeApp({
-	apiKey: 'AIzaSyCVCYAJs7_eNVtQytuaV4GQGeJHMwjtzjM',
-	authDomain: 'infinite-cache-300121.firebaseapp.com',
-	projectId: 'infinite-cache-300121',
-	storageBucket: 'infinite-cache-300121.appspot.com',
-	messagingSenderId: '682010132010',
-	appId: '1:682010132010:web:b620d847afba4e8b84cd53',
-	measurementId: 'G-QQ1YWKEB0Q'
-});
-
-const Context = createContext(null);
-
-const auth = firebase.auth();
-const firestore = firebase.firestore();
-
 ReactDOM.render(
-	<Context.Provider
-		value={{
-			firebase,
-			auth,
-			firestore
-		}}>
+	<React.StrictMode>
 		<App />
-	</Context.Provider>,
+	</React.StrictMode>,
 	document.getElementById('root')
 );
 

@@ -120,6 +120,7 @@ const Portfolio = () => {
 					{projectDialog.images && (
 						<ImageGallery images={projectDialog.images} />
 					)}
+
 					<Typography className="projectDialog_description">
 						{projectDialog.description}
 					</Typography>

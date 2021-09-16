@@ -1,6 +1,6 @@
 import React from 'react';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import TelegramIcon from '@material-ui/icons/Telegram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import {
@@ -21,22 +21,22 @@ const resumeData = {
 
 	socials: {
 		Facebook: {
-			link: 'https://www.facebook.com/',
+			link: 'https://www.facebook.com/michael.syritchenko',
 			text: 'MyFacebook',
 			icon: <FacebookIcon />
 		},
-		Twitter: {
-			link: 'https://www.twitter.com/',
-			text: 'MyTwitter',
-			icon: <TwitterIcon />
+		Telegram: {
+			link: 'https://t.me/syritchenkom',
+			text: 'MyTelegram',
+			icon: <TelegramIcon />
 		},
 		Linkedin: {
-			link: 'https://www.linkedin.com/',
+			link: 'https://www.linkedin.com/in/syritchenko/',
 			text: 'MyLinkedIn',
 			icon: <LinkedInIcon />
 		},
 		GitHub: {
-			link: 'https://www.github.com/',
+			link: 'https://github.com/syritchenkom',
 			text: 'MyGithub',
 			icon: <GitHubIcon />
 		}

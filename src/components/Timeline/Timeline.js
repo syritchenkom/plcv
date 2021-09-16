@@ -31,31 +31,51 @@ const CustomTimeline = ({ title, icon, children }) => {
 		</Timeline>
 
 		//======= Proba =======
-		// <Timeline className={'timeline'}>
-		// 	{/* Item Header */}
-		// 	<TimelineItem className={'timeline_firstItem'}>
-		// 		<TimelineSeparator>
-		// 			<TimelineDot className={'timeline_dot_header'}>{icon}</TimelineDot>
-		// 			<TimelineConnector className={'timeline_line'} />
-		// 		</TimelineSeparator>
-		// 		<TimelineContent>
-		// 			<Typography variant="h6" className={'timeline_header'}>
-		// 				{title}
-		// 			</Typography>
-		// 		</TimelineContent>
-		// 	</TimelineItem>
-		// 	<TimelineItem>
-		// 		<TimelineSeparator>
-		// 			<TimelineDot className={'timeline_dot'} />
-		// 			<TimelineConnector className={'timeline_line'} />
-		// 		</TimelineSeparator>
-		// 		<TimelineContent>
-		// 			<Typography variant="h6" className={'timeline_header'}>
-		// 				{children}
-		// 			</Typography>
-		// 		</TimelineContent>
-		// 	</TimelineItem>
-		// </Timeline>
+		/*<Timeline className={'timeline'}>
+			{/!* Item Header *!/}
+			<TimelineItem className={'timeline_firstItem'}>
+				<TimelineSeparator>
+					<TimelineDot className={'timeline_dot_header'}>{icon}</TimelineDot>
+					<TimelineConnector className={'timeline_line'} />
+				</TimelineSeparator>
+				<TimelineContent>
+					<Typography variant="h6" className={'timeline_header'}>
+						{title}
+					</Typography>
+				</TimelineContent>
+			</TimelineItem>
+			<TimelineItem>
+				<TimelineSeparator>
+					<TimelineDot className={'timeline_dot'} />
+					<TimelineConnector className={'timeline_line'} />
+				</TimelineSeparator>
+				<TimelineContent>
+					<Typography variant="h6" className={'timeline_header'}>
+						{children}
+					</Typography>
+				</TimelineContent>
+			</TimelineItem>
+		
+		<TimelineItem className={'timeline_firstItem'}>
+				<TimelineSeparator>
+			 		<TimelineDot/>
+				 	<TimelineConnector />
+				</TimelineSeparator>
+				<TimelineContent>
+				 <Typography variant="h6" className={'timeline_header'}>
+					{children}
+				 </Typography>
+				</TimelineContent>
+			</TimelineItem>
+		 	<TimelineItem className={'timeline_firstItem'}>
+				<TimelineSeparator>
+			 		<TimelineDot/>
+				</TimelineSeparator>
+				<TimelineContent>
+					Tel: 12313-323323
+				</TimelineContent>
+			</TimelineItem>
+		</Timeline>*/
 	);
 };
 
