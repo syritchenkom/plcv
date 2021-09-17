@@ -67,7 +67,7 @@
 	cursor: pointer;
 }
 
-.projectDialog .projectDialog_icon :hover {
+.projectDialog .projectDialog_icon:hover {
 	color: var(--main-color);
 }
 
