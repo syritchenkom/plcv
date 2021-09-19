@@ -9,6 +9,7 @@ import './Header.css';
 
 const Header = (props) => {
 	const pathName = props?.location?.pathname;
+
 	return (
 		<Navbar expand="lg" sticky="top" className="header">
 			{/* Home link */}
@@ -45,12 +46,18 @@ const Header = (props) => {
 					{Object.keys(resumeData.socials).map((key) => (
 						<a
 							href={resumeData.socials[key].link}
+							key={key}
 							target="_blank"
 							rel="noreferrer">
 							{resumeData.socials[key].icon}
 						</a>
 					))}
-					<CustomButton text={'Hire My'} icon={<Telegram />} />
+					<Nav.Link
+						href="https://t.me/syritchenkom"
+						target="_blank"
+						rel="noreferrer">
+						<CustomButton text={'Hire My'} icon={<Telegram />} />
+					</Nav.Link>
 				</div>
 			</Navbar.Collapse>
 		</Navbar>

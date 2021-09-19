@@ -117,7 +117,8 @@ const Portfolio = () => {
 				/> */}
 
 				<DialogContent style={{ height: '80vh' }}>
-					{projectDialog.images && (
+					{resumeData.projects.images && (
+						// <ImageGallery images={projectDialog.images} />
 						<ImageGallery images={projectDialog.images} />
 					)}
 
@@ -126,7 +127,7 @@ const Portfolio = () => {
 					</Typography>
 				</DialogContent>
 				<DialogActions className="projectDialog_action">
-					{projectDialog?.links?.map((link) => (
+					{resumeData?.projects?.links?.map((link) => (
 						<a
 							href={link.link}
 							target="_blank"

@@ -3,12 +3,9 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import {
-	WebOutlined,
-	AssignmentOutlined,
-	YouTube,
-	Language
-} from '@material-ui/icons';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LanguageIcon from '@mui/icons-material/Language';
+import { WebOutlined, AssignmentOutlined } from '@material-ui/icons';
 
 const resumeData = {
 	name: 'Mykhailo Syritchenko',
@@ -139,9 +136,9 @@ const resumeData = {
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',
 			links: [
-				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <YouTubeIcon /> },
 				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
-				{ link: 'https://www.google.com/', icon: <Language /> }
+				{ link: 'https://www.google.com/', icon: <LanguageIcon /> }
 			]
 		},
 		{
@@ -152,9 +149,9 @@ const resumeData = {
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',
 			links: [
-				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <YouTubeIcon /> },
 				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
-				{ link: 'https://www.google.com/', icon: <Language /> }
+				{ link: 'https://www.google.com/', icon: <LanguageIcon /> }
 			]
 		},
 		{
@@ -165,9 +162,9 @@ const resumeData = {
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',
 			links: [
-				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <YouTubeIcon /> },
 				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
-				{ link: 'https://www.google.com/', icon: <Language /> }
+				{ link: 'https://www.google.com/', icon: <LanguageIcon /> }
 			]
 		},
 		{
@@ -178,9 +175,9 @@ const resumeData = {
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',
 			links: [
-				{ link: 'https://www.google.com/', icon: <YouTube /> },
+				{ link: 'https://www.google.com/', icon: <YouTubeIcon /> },
 				{ link: 'https://www.google.com/', icon: <GitHubIcon /> },
-				{ link: 'https://www.google.com/', icon: <Language /> }
+				{ link: 'https://www.google.com/', icon: <LanguageIcon /> }
 			]
 		}
 	]

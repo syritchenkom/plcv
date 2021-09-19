@@ -47,7 +47,7 @@ const Resume = () => {
 						<Grid item xs={12} md={6}>
 							<CustomTimeline title="Work Experience" icon={<WorkIcon />}>
 								{resumeData.experiences.map((experience) => (
-									<TimelineItem>
+									<TimelineItem key={experience.title}>
 										<CustomTimelineSeparator />
 										<TimelineContent className="timeline_content">
 											<Typography className="timeline_title">
@@ -73,7 +73,7 @@ const Resume = () => {
 								title="Education Experience"
 								icon={<SchoolIcon />}>
 								{resumeData.educations.map((education) => (
-									<TimelineItem>
+									<TimelineItem key={education.title}>
 										<CustomTimelineSeparator />
 										<TimelineContent className="timeline_content">
 											<Typography className="timeline_title">
@@ -110,7 +110,7 @@ const Resume = () => {
 						justifyContent="space-around"
 						className="service-item">
 						{resumeData.services.map((service) => (
-							<Grid item xs={12} sm={6} md={3}>
+							<Grid item xs={12} sm={6} md={3} key={service.title}>
 								<div className="service">
 									<Icon className="service_icon">{service.icon}</Icon>
 									<Typography className="service_title" variant="h6">
@@ -136,13 +136,16 @@ const Resume = () => {
 				<Grid item xs={12}>
 					<Grid container justify="space-between" spacing={3}>
 						{resumeData.skills.map((skill) => (
-							<Grid item xs={12} sm={6} md={3}>
+							<Grid item xs={12} sm={6} md={3} key={skill.title}>
 								<Paper elevation={0} className="skill">
 									<Typography variant="h6" className="skill_title">
 										{skill.title}
 									</Typography>
 									{skill.description.map((element) => (
-										<Typography variant="body2" className="skill_description">
+										<Typography
+											variant="body2"
+											className="skill_description"
+											key={element}>
 											<TimelineDot
 												variant={'outlined'}
 												className="timeline_dot"
@@ -223,7 +226,7 @@ const Resume = () => {
 						<Grid item xs={12}>
 							<Grid container className="ccontactInfo_socialsContainer">
 								{Object.keys(resumeData.socials).map((key) => (
-									<Grid item className="contactInfo_social">
+									<Grid item className="contactInfo_social" key={key}>
 										<a href={resumeData.socials[key].link}>
 											{resumeData.socials[key].icon}
 										</a>

@@ -13,6 +13,7 @@ import resumeData from '../../utils/resumeData';
 //import CustomTimeline from '../Timeline/Timeline';
 import profileImage from '../../assets/images/profileImage.jpg';
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline';
+import CV from '../../assets/cv/Mykhailo_Syritchenko_CV2021.pdf';
 
 import './Profile.css';
 
@@ -41,6 +42,16 @@ const Profile = () => {
 		</TimelineItem>
 	);
 
+	const onDownload = () => {
+		console.log(CV);
+		const link = document.createElement('a');
+		link.download = 'Mykhailo_Syritchenko_CV2021.pdf';
+		link.href = CV;
+		// link.setAttribute('download', '');
+		// link.setAttribute('href', CV);
+		link.click();
+	};
+
 	return (
 		<div className="profile container_shadow">
 			<div className="profile_name">
@@ -61,13 +72,21 @@ const Profile = () => {
 					{Object.keys(resumeData.socials).map((key) => (
 						<CustomTimelineItem
 							title={key}
+							key={key}
 							text={resumeData.socials[key].text}
 							link={resumeData.socials[key].link}
 						/>
 					))}
 				</CustomTimeline>
 				<div className="button_container" style={{ display: 'flex' }}>
-					<CustomButton text={'Download Cv'} icon={<GetAppIcon />} />
+					<a href={CV} target="_blank" rel="noopener noreferrer">
+						<CustomButton
+							text={'Download CV'}
+							icon={<GetAppIcon />}
+							onClick={onDownload}
+						/>
+					</a>
+					{/* <a onClick={onDownload}>Download</a> */}
 				</div>
 			</div>
 		</div>
