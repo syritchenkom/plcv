@@ -27,7 +27,14 @@ const CustomTimeline = ({ title, icon, children }) => {
 					</Typography>
 				</TimelineContent>
 			</TimelineItem>
-			{children}
+			<TimelineItem>
+				<TimelineSeparator />
+				<TimelineContent>
+					<Typography variant="h6" className={'timeline_header'}>
+						{children}
+					</Typography>
+				</TimelineContent>
+			</TimelineItem>
 		</Timeline>
 
 		//======= Proba =======
@@ -82,7 +89,7 @@ const CustomTimeline = ({ title, icon, children }) => {
 export const CustomTimelineSeparator = () => (
 	<TimelineSeparator className={'separator_padding'}>
 		<TimelineDot variant={'outlined'} className={'timeline_dot'} />
-		<TimelineConnector />
+		{/* <TimelineConnector /> */}
 	</TimelineSeparator>
 );
 
