@@ -33,7 +33,7 @@ const resumeData = {
 		{
 			link: 'https://www.linkedin.com/in/syritchenko/',
 			text: 'My LinkedInLink',
-			title: 'Linkedin',
+			title: 'LinkeDin',
 			icon: <LinkedInIcon />
 		},
 		{
