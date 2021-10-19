@@ -1,11 +1,12 @@
 import React from 'react';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TelegramIcon from '@material-ui/icons/Telegram';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LanguageIcon from '@mui/icons-material/Language';
-import { WebOutlined, AssignmentOutlined } from '@material-ui/icons';
+import WebIcon from '@mui/icons-material/Web';
+import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
 
 const resumeData = {
 	name: 'Mykhailo Syritchenko',
@@ -16,28 +17,32 @@ const resumeData = {
 	adress: 'Wrocław, Poland',
 	phone: '+48(575)308-152',
 
-	socials: {
-		Facebook: {
+	socials: [
+		{
 			link: 'https://www.facebook.com/michael.syritchenko',
-			text: 'MyFacebook',
+			text: 'My FacebookLink',
+			title: 'Facebook',
 			icon: <FacebookIcon />
 		},
-		Telegram: {
+		{
 			link: 'https://t.me/syritchenkom',
-			text: 'MyTelegram',
+			text: 'My TelegramLink',
+			title: 'Telegram',
 			icon: <TelegramIcon />
 		},
-		Linkedin: {
+		{
 			link: 'https://www.linkedin.com/in/syritchenko/',
-			text: 'MyLinkedIn',
+			text: 'My LinkedInLink',
+			title: 'Linkedin',
 			icon: <LinkedInIcon />
 		},
-		GitHub: {
+		{
 			link: 'https://github.com/syritchenkom',
-			text: 'MyGithub',
+			text: 'My GithubLink',
+			title: 'GitHub',
 			icon: <GitHubIcon />
 		}
-	},
+	],
 
 	about:
 		'Started earnest brother believe an exposed so. Me he believing daughters if forfeited at furniture. Age again and stuff downs spoke. Late hour new nay able fat each sell. Nor themselves age introduced frequently use unsatiable devonshire get. They why quit gay cold rose deal park. One same they four did ask busy. Reserved opinions fat him nay position. Breakfast as zealously incommode do agreeable furniture. One too nay led fanny allow plate. \n \n Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat. Her bachelor honoured perceive securing but desirous ham required. Questions deficient acuteness to engrossed as. Entirely led ten humoured greatest and yourself. Besides ye country on observe. She continue appetite endeavor she judgment interest the met. For she surrounded motionless fat resolution may.',
@@ -86,17 +91,17 @@ const resumeData = {
 
 	services: [
 		{
-			icon: <WebOutlined />,
+			icon: <WebIcon />,
 			title: 'Web Development',
 			description: 'I have been working on web design for 10 years.'
 		},
 		{
-			icon: <AssignmentOutlined />,
+			icon: <AssignmentOutlinedIcon />,
 			title: 'Branding Identity',
 			description: 'We will make you a brand that is catchy and leaves a trace.'
 		},
 		{
-			icon: <WebOutlined />,
+			icon: <WebIcon />,
 			title: 'Illustrator',
 			description: 'I have been working on illustration design for 6 years.'
 		}
@@ -130,8 +135,10 @@ const resumeData = {
 	projects: [
 		{
 			tag: 'React',
-			images:
+			image: [
 				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg'
+			],
 			title: 'React Project 1',
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',
@@ -143,8 +150,9 @@ const resumeData = {
 		},
 		{
 			tag: 'React',
-			images:
-				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+			image: [
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg'
+			],
 			title: 'React Project 2',
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',
@@ -156,8 +164,9 @@ const resumeData = {
 		},
 		{
 			tag: 'Python',
-			images:
-				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+			image: [
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg'
+			],
 			title: 'Python Project 1',
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',
@@ -169,8 +178,9 @@ const resumeData = {
 		},
 		{
 			tag: 'Java',
-			images:
-				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg',
+			image: [
+				'https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg'
+			],
 			title: 'Java Project 1',
 			caption: 'A short description',
 			description: 'This is my project description. Please fill it in.',

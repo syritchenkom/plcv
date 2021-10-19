@@ -1,21 +1,21 @@
 import React from 'react';
 
-import { Typography } from '@material-ui/core';
+import Typography from '@mui/material/Typography';
 
-import GetAppIcon from '@material-ui/icons/GetApp';
-import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import GetAppIcon from '@mui/icons-material/GetApp';
+import PersonIcon from '@mui/icons-material/Person';
 
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineContent from '@mui/lab/TimelineContent';
 
 import CustomButton from '../Button/Button';
 import resumeData from '../../utils/resumeData';
-//import CustomTimeline from '../Timeline/Timeline';
 import profileImage from '../../assets/images/profileImage.jpg';
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline';
-import CV from '../../assets/cv/Mykhailo_Syritchenko_CV2021.pdf';
+import CV from '../../assets/cv/Mykhailo_SYRITCHENKO_CV_2021.pdf';
 
 import './Profile.css';
+import { Nav } from 'react-bootstrap';
 
 const Profile = () => {
 	const CustomTimelineItem = ({ title, text, link }) => (
@@ -29,9 +29,9 @@ const Profile = () => {
 				{link ? (
 					<Typography className="timelineItem_text">
 						<span>{title} : </span>
-						<a href={link} target="_blank" rel="noreferrer">
+						<Nav.Link href={link} target="_blank" rel="noreferrer">
 							{text}
-						</a>
+						</Nav.Link>
 					</Typography>
 				) : (
 					<Typography className="timelineItem_text">
@@ -41,16 +41,6 @@ const Profile = () => {
 			</TimelineContent>
 		</TimelineItem>
 	);
-
-	const onDownload = () => {
-		console.log(CV);
-		const link = document.createElement('a');
-		link.download = 'Mykhailo_Syritchenko_CV2021.pdf';
-		link.href = CV;
-		// link.setAttribute('download', '');
-		// link.setAttribute('href', CV);
-		link.click();
-	};
 
 	return (
 		<div className="profile container_shadow">
@@ -64,14 +54,14 @@ const Profile = () => {
 			</figure>
 
 			<div className="profile_information">
-				<CustomTimeline icon={<PersonOutlineIcon />}>
+				<CustomTimeline icon={<PersonIcon />}>
 					<CustomTimelineItem title="Name" text={resumeData.name} />
 					<CustomTimelineItem title="Title" text={resumeData.title} />
 					<CustomTimelineItem title="E-mail" text={resumeData.email} />
 
 					{Object.keys(resumeData.socials).map((key) => (
 						<CustomTimelineItem
-							title={key}
+							title={resumeData.socials[key].title}
 							key={key}
 							text={resumeData.socials[key].text}
 							link={resumeData.socials[key].link}
@@ -79,18 +69,12 @@ const Profile = () => {
 					))}
 				</CustomTimeline>
 				<div className="button_container" style={{ display: 'flex' }}>
-					<a href={CV} target="_blank" rel="noopener noreferrer">
-						<CustomButton
-							text={'Download CV'}
-							icon={<GetAppIcon />}
-							onClick={onDownload}
-						/>
-					</a>
-					{/* <a onClick={onDownload}>Download</a> */}
+					<Nav.Link href={CV} target="_blank" rel="noopener noreferrer">
+						<CustomButton text={'Download CV'} icon={<GetAppIcon />} />
+					</Nav.Link>
 				</div>
 			</div>
 		</div>
 	);
 };
-
 export default Profile;

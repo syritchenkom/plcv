@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Grid, Icon, Paper, Typography, TextField } from '@material-ui/core';
+import { Grid, Icon, Paper, Typography, TextField } from '@mui/material';
 
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
+import { TimelineItem, TimelineContent, TimelineDot } from '@mui/lab';
 
-import WorkIcon from '@material-ui/icons/Work';
-import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
 
 import CustomTimeline, {
 	CustomTimelineSeparator
@@ -23,7 +21,7 @@ const Resume = () => {
 		<>
 			{/* About me */}
 			<Grid container className="section pb_45 pt_45">
-				<Grid item className="section_title mb_30">
+				<Grid item className="section_title mb_20">
 					<span></span>
 					<h6 className="section_title_text">About me</h6>
 				</Grid>
@@ -41,7 +39,7 @@ const Resume = () => {
 					<h6 className="section_title_text">Resume</h6>
 				</Grid>
 
-				<Grid iteem xs={12}>
+				<Grid item xs={12}>
 					<Grid container className="resume_timeline">
 						{/* Experiences */}
 						<Grid item xs={12} md={6}>
@@ -127,7 +125,7 @@ const Resume = () => {
 			</Grid>
 
 			{/* Skills */}
-			<Grid container className="section graybg pb_45 p_50">
+			<Grid container className="section graybg pb_45 pt_45">
 				<Grid item className="section_title mb_30">
 					<span></span>
 					<h6 className="section_title_text">My Skills</h6>
@@ -173,10 +171,20 @@ const Resume = () => {
 						<Grid item xs={12}>
 							<Grid container spacing={3}>
 								<Grid item xs={12} sm={6}>
-									<TextField fullWidth name="name" label="Name" />
+									<TextField
+										fullWidth
+										name="name"
+										label="Name"
+										variant="standard"
+									/>
 								</Grid>
 								<Grid item xs={12} sm={6}>
-									<TextField fullWidth name="email" label="E-mail" />
+									<TextField
+										fullWidth
+										name="email"
+										label="E-mail"
+										variant="standard"
+									/>
 								</Grid>
 								<Grid item xs={12}>
 									<TextField
@@ -185,6 +193,7 @@ const Resume = () => {
 										label="Message"
 										multiline
 										rows={4}
+										variant="standard"
 									/>
 								</Grid>
 								<Grid item xs={12}>

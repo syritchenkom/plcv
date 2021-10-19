@@ -1,5 +1,5 @@
-import { Typography } from '@material-ui/core';
 import React from 'react';
+import { Typography } from '@mui/material';
 import './Footer.css';
 import resumeData from '../../utils/resumeData';
 

@@ -1,4 +1,7 @@
 /* Tabs */
+.customTabs {
+	margin-bottom: 15px;
+}
 
 .customTabs .active {
 	color: var(--main-color) !important;

@@ -49,7 +49,12 @@
 	font-weight: 400 !important;
 }
 .timelineItem_text > a {
+	padding-top: 0;
 	color: #787878 !important;
+	text-decoration: revert;
+}
+.timelineItem_text > a:hover {
+	color: #80bdb5 !important;
 	text-decoration: none;
 }
 
